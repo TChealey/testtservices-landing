@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urine Collection * Test T Services | Mobile DOT & Non-Dot</title>
+  <meta name="description" content="Mobile certified urine specimen collections - DOT & Non-DOT - serving Charlotte, NC and surrounding areas." />
+  <link rel="icon" href="/images/TestTLogo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script>function toggleMenu(){document.querySelector('header.nav').classList.toggle('open')}</script>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navingation" aria-label="Main">
+      <a class="brand" href="index.htm">
+	<img class="logo" src="images/TestTLogo.png" alot="Test T Services logo" />
+	<div>
+	  <h1>Test T Services</h1>
+	  <div class="tag">Where health meets hustle!</div>
+	</div>
+      </a>
+      <nav class="navlinks" aria-label="Primary">
+	<a href="index.html#services">Services</a>
+	<a href="courier.html">Courier</a>
+	<a class="ghost" href="contact.html">Contact</a>
+      </nav>
+      <button class="mobile-btn ghost" onclick="toggleMenu()" aria-label="Toggle menu">Menu</button>
+    </div>
+  </header>
+
+  <main class="container" style="padding:34px 0">
+    <section class="hero">
+      <h2>Mobile Certified Urine Specimen Collection</h2>
+      <p class="muted">DOT & Non-DOT collections for employers and agencies. We come to your site and handle paperwork, sealing, and delivery to your designated lab.</p>
+    </section>
+
+    <section class="grid2">
+      <div class="card">
+	<h3>Collection types</h3>
+	<ul class="list">
+	  <li><span class="tick">&#10003;</span> DOT: pre-employment, random, post-accident, return-to-service</li>
+	  <li><span class="tick">&#10003;</span> Non-DOT / pre-employment panels</li>
+	  <li><span class="tick">&#10003;</span> On-site at workplaces, clinics, job sites, roadside</li>
+	</ul>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3>Availability & SLAs</h3>
+      <div class="kpis">
+	<div class="kpi"><b>24/7</b><span class="muted">On-call</span></div>
+	<div class="kpi"><b>&lt;60min</b><span class="muted">Typical dispatch</span></div>
+	<div class="kpi"><b>CCF</b><span class="muted">Proof of drop-off</span></div>
+      </div>
+      <p style="margin-top:14px"><a class="ghost" href="contact.html">Schedule a collection -></a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <small>© <span id="y"></span> Test T Services * Charlotte, NC</small>
+      <small>Privacy * Terms * <a href="contact.html">Contact</a></small>
+    </div>
+  </footer>
+  <script>document.getElementByID('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
