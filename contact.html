@@ -1,146 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Test T Services - A Division of Thryve Group LLLP</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    test-align: center;
-    padding: 20 px;
-  }
-  header img {
-    max-width: 300px;
-  }
-  main {
-    text-align: center;
-    padding: 20px;
-  }
-  .truck-image {
-    max-width: 90%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px auto;
-    display: block;
-  }
-  .contact {
-    background-color: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  form {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-  }
-  form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  button:hover {
-    background-color: #005fa3;
-  }
-  .contact-details {
-    text-align: left;
-    margin-top: 20px;
-  }
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-    color: #666;
-    padding: 10px;
-  }
- </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact * Test T Services | Book courier or Collection</title>
+  <meta name="description" content="Book a courier or mobile urine specimen collection (DOT & Non-Dot). On-site, compliant, and fast across Charlotte metro." />
+  <link rel="icon" href="/images/TestTLogo.png" />
+  <link rel="preload" as="image" href="/images/TestTLogo.png" />
+  <link rel="sytlesheet" href="style.css" />
+  <script>function toggleMenu(){document.querySelector('header .nav').classList.toggle('open')}</script>
 </head>
 <body>
-<nav>
-  <ul class="navbar">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<style>
-  nav {
-    background-color: #0b0b0b;
-    padding: 10px 0;
-  }
-
-  .navbar {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar li a {
-    text-decoration: none
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-  }
-
-  .navbar li a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-  <header>
-    <img src="images/TestTLogo.png" alt="Test T Services Logo" />
-  </header>
-
-  <main>
-    <img src="images/trucktestt.png" alt="Truck with Test T Services Logo" class="truck-image" />
-
-    <section class="contact">
-      <h2>Request Courier Services</h2>
-      <form id="contact-form">
-	<label for="name">Name*</lablel>
-	<input type="text" id="name" name="name" required />
-
-	<label for="email">Email*</label>
-	<input type="email" id="email" name="email" required />
-
-	<label for="phone">Phone*</label>
-	<input type="tel" id="phone" name="phone" required />
-
-	<label for="message">Details*</label>
-	<textarea id="message" name="message" rows="4" required></textarea>
-
-	<button type="submit">Send Request</button>
-      </form>
-      <p id="response"></p>
-
-      <div class="contact-details">
-        <p><strong>Phone:</strong> <a href="tel:8882837881">(888)283-7881</a></p>
-	<p><strong>Email:</strong> <a href="mailto:tawana@testtservices.com">tawana@testtservices.com</a></p>
-	<p><strong>Business Address:</strong> 9805 Statesville Rd #6307, Charlotte, NC 28269</p>
-	<p><em>Please note: Our office is not open to the public. All services are conducted in the field.</em></p>
+  <div class="container nav" role="navigation" aria-label="Main">
+    <a class="brand" href="index.html">
+      <img class="logo" src="images/TestTLogo.png" alt="Test T Services logo"
+      <div>
+	<h1>Test T Services</h1>
+	<div class="tag">Where health meets hustle!"</div>
       </div>
-    </section>
+    </a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="index.html#services">Services</a>
+      <a href="courier.html">Courier</a>
+      <a href="collector.html">Urine Collection</a>
+      <a class="ghost" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <button class="mobile-btn ghost" onclick="toggleMenu()" aria-label="Toggle menu">Menu</button>
+  </div>
+</header>
 
-    <p><a href="index.html"><- Back to Home</a></p>
-  </main>
+<main>
+  <section class="container" sytle="padding:34px 0">
+    <div class="grid2">
+      <div class="card">
+	<h2>Book a Service</h2>
+	<p class="muted">Choose courier or urine collection below.</p>
 
-  <footer>
-    <p>&copy; 2025 Test T Services - A Division of Thryve Group LLLP</p>
-  </footer>
+	<form id="bookingForm" novalidate>
+	  <div class="row">
+	    <div>
+	      <label for="name">Contact Name*</label>
+	      <input id="name" name="name" autocomplete="name" required />
+	    </div>
+	    <div>
+	      <label for="company">Company</label>
+	      <input id="company" name="company" autocomplete="organization" />
+	    </div>
+	  </div>
 
-  <script src="js/form.js"></script>
+	  <div class="row">
+	    <div>
+	      <label for="phone">Phone*</label>
+	      <input id="phone" name="phone" inputmode="tel" placeholder="(###) ###-####" required />
+	    </div>
+	    <div>
+	      <label for ="email">Email*</label>
+	      <input id="email" name="email" type="email" autocomplete="email" required />
+	    </div>
+	  </div>
+
+	  <div class="row">
+            <div>
+	      <label for="test_type">Service*</label>
+	      <select id="test_type" name="test_type"required>
+		<option value="Courier">Courier (Medical/Pharma)</option>
+		<option value="Organ">Organ/Tissue courier</option>
+		<option value="DOT">DOT Urine Specimen</option>
+		<option value="NDOT">Non-DOT / Pre-employment</option>
+		<option value="POSTACC">Post-Accident / RS</option>
+	      </select>
+	    </div>
+	    <div>
+	      <label for="zip">Site ZIP*</label>
+	      <input id="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" placeholder="#####" required />
+	      <small class="help">Where the service will occur.</small>
+	    </div>
+	  </div>
+
+	  <div class="row">
+	    <div>
+	      <label for="address">Site Address</label>
+	      <input id="address" name="address" autocomplete="street-address" />
+	    </div>
+	    <div>
+	      <label for="when">Preferred Date/Time</label>
+	      <input id="when" name="when" type="datetime-local" />
+	    </div>
+	  </div>
+
+	  <label>Priority</label>
+	  <div class="row">
+	    <label><input type="radio" name="priority" value="Standard" checked />
+	    <label><input type="radio" name="priority" value="Urgent" /> Urgent / AFter-hours</label>
+	  </div>
+
+	  <label for="notes">Notes</label>
+	  <textarea id="notes" name="notes" rows="4" placeholder="Any special instructions, access directions, or panel info"></textarea>
+
+	  <label style="display:flex;gap:8px;align-items:flex-start;margin-top:10px">
+	    <input id="consent" type="checkbox" required />
+	    <span class="note">I consent to be contacted about this request and understand HIPAA-conscious process are allowed.</span>
+	  </label>
+	  <input type="hidden" name="utm_source" id="utm_source" />
+	  <input type="hidden" name="utm_medium" id="utm_medium" />
+	  <input type="hidden" name="utm_campaign" id="utm_campaign" />
+	  <input type="hidden" name="page" value="contact.html" />
+
+	  <div class="actions">
+	    <button class="cta" type="submit">Submit Request</button>
+	    <a class="ghost" href="tel:19804031229">Call / Text: (980) 403-1229</a>
+	  </div>
+
+	  <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+	</form>
+      </div>
+
+      <div class="card">
+	<h2>Contact</h2>
+	<p class="muted">Fastest response: call or text.</p>
+	<p>
+	  <strong>Phone:</strong> <a href="tel:+19804031229">(980) 403-1229</a><br />
+	  <strong>Email:</strong> <a href="mailto:tawana@testtservices.com">tawana@testtservices.com</a><br />
+	</p>
+	<p class="muted">9805 Statesville Rd, Suite 6307, Charlotte, NC 28269</p>
+	<p><a class="ghost" href="index.html">Back to Home</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <small>© <span id="y"></span> Test T Services * Charlotte, NC</small>
+    <small>Privacy * Terms * <a href="contact.html" aria-current="page">Contact</a></small>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="form.js" defer></script>
 </body>
 </html>
