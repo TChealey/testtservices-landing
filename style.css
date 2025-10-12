@@ -84,4 +84,17 @@ form input:focus,form select:focus,form textarea:focus{
   footer{background:#0B0F16;color:#A8B3C7}
   footer a{color:#8BB3FF}
   .btn-ghost{background:transparent;color:#9CC0FF;border-color:#2A3A5A}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #111;
 }
