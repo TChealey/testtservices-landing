@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1>
-  <title>About & Service Area - Test T Services</title>
-  <link rel="stylesheet" href="sytle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width-width, initial-scale=1.0" />
+  <title>About & Area | Test T Services</title>
+  <meta name="description" content="About Test T Services LLC. Charlotte-based last-mile delivery across the Southeastern United States." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-  <div class="container nav">
-    <div class="brand">
-      <img src="image/logo.png" alt="Test T Services logo">
-      <strong>Test T Services</strong>
+  <div class="container">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+	<img src="images/logo.png" alt="Test T Services logo" />
+	<div class="title">Test T Services</div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+	<button class="menu-toggle" onclick toggleMenu()" aria-label="Open menu">=</button>
+	<ul class="nav-links" id="navLinks">
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="services.html">What We Do</a></li>
+	  <li><a href="hours.html">Hours</a></li>
+	  <li><a href="capabilities.html">Capabilities</a></li>
+	  <li><a class="active" href="about.html">About &amp; Area</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-	<li><a href="services.html">What We Do</a></li>
-	<li><a href="hours.html">Hours</a></li>
-	<li><a href="about.html">About & Area</a></li>
-	<li><a href="contact.html">Contact</a></li>
-	<li><a href="capabilities.html">Capabilities Statement</a></li>
-      </ul>
-    </nav>
   </div>
 </header>
 
-
 <main>
-  <section class="hero">
-    <div class="container">
-      <h1>About Us & Service Area</h1>
-      <p class="sub">Your link between urgency and accuracy.</p>
-    </div>
+  <div class="container">
+    <h1 class="page-title">About &amp; Service Area</h1>
+    <p class="page-sub">
+      Test T Services LLC is a Charlotte-based last-mile delivery company supporting healthcare, retail, and business clients with routed and on-demand delivery solutions.
+    </p>
+
+    <div class="hr"></div>
+    
+    <h2>Service Area</h2>
+    <p class="small">Based in Charlotte, North Carolina. Serving the Southeaster United States.</p>
+    <ul>
+      <li>North Carolina</li>
+      <li>South Carolina</li>
+      <li>Georgia</li>
+      <li>Virginia</li>
+      <li>Southeastern U.S. (by request)</li>
+    </ul>
   </section>
 
-  <section>
-    <div class="container card">
-      <div class="card-inner">
-        <h2>Certifications & Credentials</h2>
-	<ul>
-	  <li>Bloodborne Pathogens Certified</li
-	  <li>HIPAA Compliance Certified</li>
-	  <li>TWIC Card Holder (Transportation Worker Identification Credential)</li>
-	  <li>Valid Driver's License & Clean Driving Record</li>
-	</ul>
-      </div>
-    </div>
-  </section>
+  <aside class="card">
+    <h2>Operations</h2>
+    <p class="small">
+      We operate in the field to support efficient dispatching and real-world delivery needs.
+    </p>
 
-  <section>
-    <div class="container">
-      <h2>Our Values</h2>
-      <div class="grid-3" style="margin-top:10px;">
-	<div class="feature"><h3>Reliability</h3><p class="muted">We Deliver Every Time.</p></div>
-	<div class="feature"><h3>Integrity</h3><p class="muted">Doing It Right When No One Is Watching.</p></div>
-	<div class="feature"><h3>Excellence</h3><p class="muted">Setting the Standard in Every Mile.</p></div>
-	<div class="feature"><h3>Safety</h3><p class="muted">Protecting What Matters Most.</p></div>
-	<div class="feature"><h3>Compassion</h3><p class="muted">Delivering with Heart.</p></div>
-      </div>
+  <div class="notice">
+    <strong>Field-Based Operations Notice</strong>
+    <div class="small">
+      Public walk-in visits are not accepted at this time.
+      All services are scheduled in advance.
     </div>
-  </section>
+  </div>
 
-  <section>
-    <div class="container card">
-      <div class="card-inner">
-	<h2>Service Area</h2>
-	<p class="muted">We currently serve the following counties in North Carolina and South Carolina. Nearby? Contact us-coverage is often added on request.</p>
-	<div class="grid-2" style="margin-top:10px;">
-	  <div>
-	    <h3>North Carolina</h3>
-	    <p>Buncombe, Cleveland, Gaston, Mecklenburg, Cabarrus, Catawba, Forsyth, Rowan, Davidson, Randolph, Guilford, Alamance, Orange, Durham, Rockingham, Caswell, Richmond, Granville, Vance, Wake, Warren.</p>
-	  </div>
-	  <div>
-	    <h3>South Carolina</h3>
-	    <p>Greenville, Lexington, Richland, York, Anderson, Spartanburg.</p>
-	  </div>
-	</div>
-      </div>
-    </div>
-  </section>
+  <div class="hr"></div>
+ 
+  <a class="btn primary" href="contact.html">Request Service</a>
+ </aside>
+</div>
+
+</div>
 </main>
 
 <footer>
-  <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;">
-    <div>© <span id="year"></span> Test T Services * Charlotte, NC,/div>
-  </div>
+  <div class="container"> © Test T Services LLC * Charlotte, NC</div>
 </footer>
-<script>document.getElementById('year').textContent=new Date ().getFullYear();</script>
 
 </body>
-</hmtl>
+</html>
+      
