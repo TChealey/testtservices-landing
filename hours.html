@@ -1,105 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hours - Test T Services</title>
-  <meta name="description" content="Business hours for Test T Services. Weekday operations with premium STAT coverage by request." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hours | Test T Services</title>
+  <meta name="description" content="Hours of operation for Test T Services LLC. Routed, on-demand, same-day and STAT last-mile delivery by request." />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-
 <header>
-  <div class="container nav">
-    <div class="brand">
-      <img src="images/logo.png" alt="Test T Services logo" />
-      <strong>Test T Services</strong>
-    </div>
-    <nav aria-label="Primary">
-      <button class="Mobile-toggle" aria-controls="mobileMenu" aria-expanded="false" title="Menu">=</button>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">What We Do</a></li>
-	<li><a href="hours.html">Hours</a></li>
-	<li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <div class="container">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+	<img src="images/logo.png" alt="Test T Services logo" />
+	<div class="title">Test T Services<//div>
+      </a>
 
-  <div id="mobileMenu" class="mobile-menu" hidden>
-    <ul class="container">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">What We Do</a></li>
-      <li><a href="hours.html">Hours</a></li>
-      <li><a href="about.html">About & Area</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="capabilities.html">Capabilities Statement</a></li>
-    </ul>
+      <nav aria-label="Primary navigation">
+	<button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">=</button>
+	<ul class="nav-links" id="navLinks">
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="services.html">What We Do</a></li>
+	  <li><a href="active" href="hours.html">Hours</a></li>
+	  <li><a href="capabilities.html">About &amp; Area</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+	</ul>
+      </nav>
+
+    </div>
   </div>
 </header>
 
 <main>
+  <div class="container">
+    <h1 class="page-title">Hours</h1>
+    <p class="page-sub">Routed operations with premium SAT coverage available by request depending on routing and availability.
 
-  <section class="hero">
-    <div class="container">
-      <h1>Hours</h1>
-      <p class="sub">Weekday opeations with premium STAT coverage by request.</p>
-    </div>
-  </section>
+    <div class="grid">
+      <section class="card">
+	<h2>Standard Hours</h2>
+	<ul>
+	  <li><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</li>
+	  <li><strong>Same-Day / On-Demand:</strong> Available during standard hours</li>
+	  <li><strong>Routed Deliveries:</strong> Scheduled routes available</li>
+	</ul>
 
-  <section>
-    <div class="container card">
-      <div class="card-inner grid-2">
-        <div>
-	  <h2>Standard Hours</h2>
-	  <p>Mon-Thurs: 8:00 AM - 5:00 PM<br>Fri: 8:00 AM - 1:00 PM (Admin afternoons)</p>
-	  <p class="muted">STAT coverage available evenings/weekends at premium rates.</p>
-        </div>
-	<div>
-	  <h2>Contact</h2>
-	  <p>Email: <a href="mailto:tawana@testtservices.com">tawana@testtservices.com</a><br>
-	     Phone: <a href="tel:+19804031229">980-403-1229</a><br>
-	     Location: Charlotte, North Carolina</p>
-	  <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+	<div class="hr"></div>
+
+	<h2>STAT / After-Hours (By Request)</h2>
+	<p class="small">
+	  After-hours, weekend, and urgent STAT deliver is available by request depending on routing and availability.
+	</p>
+      </section>
+
+      <aside class="card">
+	<h2>Operations</h2>
+	<p class="small">
+	  We operate as a field-based last-mile delivery company. Drivers are dispatched from the field to support efficient pickups and drop-offs.
+	</p>
+
+	<div class="hr"></div>
+
+	<div class="notice">
+	  <strong>Field-Based Operations Notice</strong>
+	  <div class="small">
+	    Public walk-in visits are not accepted at this time.
+	    All services are scheduled in advance.
+	  </div>
 	</div>
-      </div>
-    </div>
-  </section>
 
+	<div class="hr"></div>
 
-  <section class="cta">
-    <div class="container">
-      <div class="inner card">
-	<div>
-          <h2 style="margin:0">Need coverage after-hours?</h2>
-	  <p class="muted" style="margin:6px 0 0">STAT requests available by appointment and premium rates.</p>
-	</div>
-	<div><a class="btn btn-primary" href="contact.html">Contact Us</a></div>
-      </div>
+	<a class="btn primary href="contact.html">Request Service</a>
+      </aside>
     </div>
-  </section>
+
+  </div>
 </main>
 
-
 <footer>
-  <div class="container" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;">
-    <div>© <span id="year"></span> Test T Services * Charlotte, NC,/div>
-  </div>
+  <div class="container">© Test T Services LLC * Charlotte, North Carolina</div>
 </footer>
 
-<script>
-  const toggle = document.querySelector('.mobile-toggle');
-  const menu = document.getElementById('mobileMenu');
-  if (toggle && menu) {
-    toggle.addEventListener('click',() +> {
-      const open = menu.style.display === 'block';
-      if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden');
-      menu.style.display = open ? 'none' : 'block';
-      toggle.setAtrribute('aria-expanded', String(!open));
-    });
-   }
-   document.getElementById('year').textContent = new Date ().getFullYear();
- </script>
 </body>
 </html>
