@@ -1,153 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact - Test T Services</title>
-  <link rel="stylesheet" href="style.css"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Test T Services</title>
+  <meta name="description" content="Contact Test T Services LLC for last-mile delivery service requests." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-  <div class="container nav">
-    <div class="brand">
-      <img src="images/logo.png" alt="Test T Services logo">
-      <strong>Test T Services</strong>
-    </div>
-    <nav aria-label="Primary">
-      <button class="mobile-toggle" aria-controls="mobileMenu" aria-expanded="false" title="Menu">=</button>
-      <ul>
+  <div class="container">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Test T Services logo" />
+	<div class="title">Test T Services</div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+	<button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">=</button>
+	<ul class="nav-links" id="navLinks">
 	<li><a href="index.html">Home</a></li>
 	<li><a href="services.html">What We Do</a></li>
 	<li><a href="hours.html">Hours</a></li>
-	<li><a href="about.html">About & Area</a></li>
-	<li><a href="contact.html">Contact</a></li>
+	<li><a href="capabilities.html">Capabilities</a></li>
+	<li><a href="about.html">About &amp; Area</a></li>
+	<li><a class="active" href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  </div>
 
-  <div id="mobileMenu" class="mobile-menu" hidden>
-    <ul class="container">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">What We Do</a></li>
-      <li><a href="hours.html">Hours</a></li>
-      <li><a href="about.html">About & Area</a></li>
-      <li><a href="contact.html">Contact"</a></li>
-      <li><a href="capabilities.html">Capabilities Statement"</a></li>
-    </ul>
   </div>
+ </div>
 </header>
 
 <main>
+  <div class="container">
+    <h1 class="page-title">Contact</h1>
+    <p class="page-sub">
+      Request service, pricing, or routing support. Share pickup, drop-off, time window, and item type.
+    </p>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Contact us</h1>
-      <p class="sub">We'll respond within one business day.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="card-inner grid-2">
-
-      <form id="contactForm" name="contactForm">
-	<label for="name">Name</label>
-	<input id="name" Name="name" required placeholders="Your name" />
-
-	<label for="email">Email</label>
-	<input id="email" name="email" type="email" required placeholder="you@example.com" />
-
-	<label for="phone">Phone</label>
-	<input id="phone" name="phone" placeholder="(###) ###-####" />
-
-	<label for="company">Company / Facility</label>
-	<input id="company" name="company" placeholder="Optional" />
-
-	<label for="county">County</label>
-	<select id="county" name="county" required>
-          <option value="">Select county...</option>
-
-	  <option>Buncombe, NC</option><option>Cleveland, NC</option><option>Gaston,NC</option><option>Mecklenburg, NC</option><option>Cabarrus, NC</option>Catawba, NC,/option><option>Forsyth, NC</option><option>Rowan, NC</option><option>Davidson, NC</option><option>Randolph, NC</option><option>Guilford, NC</option><option>Alamance, NC</option><option>Rockingham, NC</option><option>Caswell, NC</option><option>Richmond, NC</option><option>Granville, NC</option><option>Vance, NC</option><option>Wake, NC</option><option>Warren, NC</option>
-
-	  <option>Greenville, SC</option><option>Lexington, SC</option><option>Richland, SC</option><option>York, SC</option><option>Anderson, SC</option><option>Spartanburg, SC</option>
-	</select>
-
-	<label>Service Type</label>
-	<label><input type="checkbox" name="service_medical" value="Yes"> Medical Courier</label>
-	<label><input type="checkbox" name="service_organ" value="Yes"> Organ & Tissue Transport</label>
-	<label><input type="checkbox" name="service_pharma" value="Yes"> Pharmaceutical Delivery</label>
-	<label><input type="checkbox" name="service_document" value="Yes"> Document Courier</label>
-	<label><input type="checkbox" name="service_stat" value="Yes"> STAT / Same-Day</label>
-
-	<label for="urgency">Urgency</label>
-	<select id="urgency" name="urgency" required>
-	  <option value="">Select...</option>
-	  <option>Standard (same-day or scheduled)</option>
-	  <option>STAT (within 2 hours)</option>
-	  <option>Critical (1 hour or less)</option>
-	</select>
-
-	<label for="message">Message</label>
-	<textarea id="message" name="message" rows="5" required placeholders="Tell us about your delivery needs..."></textarea>
-
-	<button class="btn btn-primary" type="submit">Send</button>
-	<p id="statusMsg" class="muted" style="margin-top:10px;"></p>
-      </form>
-
-      <div class="feature">
-	<h3>Direct</h3>
+    <div class="grid">
+      <section class="card">
+	<h2>Get in Touch</h2>
 	<p>
-	  Email: <a href:"mailto:tawana@testtservices.com">tawana@testtservices.com</a>
-	  Phone: <a href="tel:+19804031229">980-403-1229</a><br />
-	  Location: Charlotte, North Carolina
+	<strong>Phone:</strong> 800-499-6330 x 1<br />
+        <strong>Email:</strong> <a href="mailto:tawana@testtservices.com">tawana@testtservices.com</a><br />
+	<strong>Website:</strong> <a href="https://www.testtservices.com/">https://www.testtservices.com</a><br />
+	<strong>Address:</strong> 9805 Statesville Road, Suite 6307, Charlotte, NC 28269
 	</p>
-	<h3 style="margin-top:12px">Business Hours</h3>
-	<p>
-	  Mon-Thu: 8:00 AM - 5:00 PM<br />
-	  Fri: 8:00 AM - 1:00 PM (Admin afternoons)<br />
-	  STAT coverage available by request.
+
+	<div class="hr"></div>
+
+	<div class="notice">
+	  <strong>Field-Based Operations Notice</strong>
+	  <div class="small">
+            We operate in field. Public walk-in visits are not accepted at this time.
+	    All services are scheduled in advance.
+	  </div>
+	</div>
+
+	<div class="hr"></div>
+
+	<h3>Fast Service Details to Send</h3>
+	<ul>
+	  <li>Pickup location + contact name/phone</li>
+	  <li>Drop-off location + contact name/phone</li>
+	  <li>Time window (ASAP / scheduled)</li>
+	  <li>Item type (medical, retail, documents, parts, etc.)</li>
+	  <li>Special handling (temperature-sensitive, confidential, signature, etc.)</li>
+	</ul>
+      </section>
+
+      <aside class="card">
+	<h2>Credentials</h2>
+	<div class="pills">
+	  <span class="pill">HIPAA</span>
+	  <span class="pill">Bloodborne Pathogens</span>
+	  <span class="pill">TWIC</span>
+	  <span class="pill">Clean Driving Record</span>
+	</div>
+
+	<div class="hr"></div>
+
+	<p class="small">
+	  If you already have a routing schedule or recurring lane, include frequency, daily stops, and mileage - we'll quote a dedicated route option.
 	</p>
-      </div>
+      </aside>
     </div>
+
   </div>
-</section>
 </main>
 
 <footer>
-  <div class="container" style="display;flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;">
-    <div>© <span id="year"></span> Test T Services * Charlotte, NC</div>
-    <div><a href="#">Privacy</a> * <a href="#">Terms</a></div>
-  </div>
+  <div class="container">© Test T Services LLC * Charlotte, North Carolina</div>
 </footer>
 
-<script>
-  const form = document.getElementById("contactForm");
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault():
-    const data = Object.fromEntries(new FormData(form).entries());
-    document.getElementById("statusMsg").textContent = "Sending...";
-
-    try {
-      const response = await fetch(
-        "https://script.google.com/macro/s/AKfycbwUbELG71ui42waMj_7MtDBB4q5HCe2-MHCAvy3-_CJo1pMmGEdHaFIykDaFfhbn80f/exec",
-        {
-	  method: "POST",
-	  body: JSON.stringify(data),
-	  headers: { "Content-Type": "application/json" },
-	}
-      );
-
-      if (response.ok) {
-	form.reset();
-	document.getElementById("statusMsg").textContent = "Thank you!" Your message has been sent.";
-      } else {
-	document.getElementById("statusMsg").textContent = "Error sending message. Please try again.";
-      }
-    } catch (error) {
-      document.getElementById("statusMsg").textContent = "Connection error. Please try again later.";
-    }
-  });
-
-  document.getElementById("year").textContent = new Date().getFullYear();
- </script>	
 </body>
 </html>
