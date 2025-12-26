@@ -30,7 +30,7 @@ header{
 }
 .brand{display:flex;align-items:center;gap:.75rem}
 .brand img{
-  height:48px;
+  height:150px;
   width:auto;
   margin-right:20px;
   vertical-align: middle;
